@@ -33,7 +33,7 @@ const Resume = () => {
             const resumeBlob = await fs.read(data.resumePath);
             if(!resumeBlob) return;
 
-            const pdfBlob = new Blob([resumeBlob], { type: 'application/pdf' });
+            const pdfBlob = new Blob([resumeBlob], { type: 'application/.pdf' });
             const resumeUrl = URL.createObjectURL(pdfBlob);
             setResumeUrl(resumeUrl);
 
